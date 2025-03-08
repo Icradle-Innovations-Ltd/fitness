@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub - Workouts</title>
+    <link rel="stylesheet" href="workouts-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Fitness Hub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workouts.html" class="active">Workouts</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Log In / Sign Up</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+<!-- Workouts Section -->
+<section class="workouts">
+    <h1>Explore Our Workouts</h1>
+    <p>Discover a variety of fitness programs tailored to your goals.</p>
+    <div class="workout-grid">
+        <div class="workout-card">
+            <img src="yoga-flow.jpg" alt="Yoga">
+            <h3>Yoga Flow</h3>
+            <p>Relax and stretch with our guided yoga sessions for all levels. Duration: 30 mins.</p>
+            <a href="#" class="card-btn">Join Now</a>
+        </div>
+        <div class="workout-card">
+            <img src="hiit-blast.jpg" alt="HIIT">
+            <h3>HIIT Blast</h3>
+            <p>Burn calories fast with high-intensity interval training. Duration: 20 mins.</p>
+            <a href="#" class="card-btn">Join Now</a>
+        </div>
+        <div class="workout-card">
+            <img src="strength-training.jpg" alt="Strength">
+            <h3>Strength Training</h3>
+            <p>Build muscle and power with our strength-focused programs. Duration: 45 mins.</p>
+            <a href="#" class="card-btn">Join Now</a>
+        </div>
+        <div class="workout-card">
+            <img src="Cardio Kick.jpg" alt="Cardio">
+            <h3>Cardio Kick</h3>
+            <p>Boost your heart rate with fun cardio exercises. Duration: 25 mins.</p>
+            <a href="#" class="card-btn">Join Now</a>
+        </div>
+    </div>
+    <div class="signup-form">
+        <h2>Join the Fitness Revolution</h2>
+        <p>Sign up to unlock personalized workouts and community support.</p>
+        <form id="workout-signup-form">
+            <div class="input-group">
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+                <label for="workout-email">Email Address</label>
+                <input type="email" id="workout-email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="workout-goal">Fitness Goal</label>
+                <select id="workout-goal" required>
+                    <option value="">Select your goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="flexibility">Flexibility</option>
+                    <option value="overall-fitness">Overall Fitness</option>
+                </select>
+            </div>
+            <div class="input-group checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms" class="checkbox-label">I agree to the <a href="#">Terms & Conditions</a></label>
+            </div>
+            <button type="submit" class="cta-btn">Sign Up Now</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Fitness Hub</h3>
+                <p>Empowering you to live a healthier, stronger life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workouts.html">Workouts</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@fitnesshub.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 Fitness Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="workouts-script.js"></script>
+</body>
+</html>

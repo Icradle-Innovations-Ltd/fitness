@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0d4ff, #c2a7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Form Section */
+.form-section {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.toggle-btn.active {
+    background: #7d5bff;
+    color: white;
+}
+
+.toggle-btn:hover {
+    background: #ddd;
+}
+
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #7d5bff;
+}
+
+.terms, .forgot-password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.terms label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.terms a, .forgot-password a, .signup-link a, .login-link a {
+    color: #7d5bff;
+    text-decoration: none;
+}
+
+.forgot-password {
+    justify-content: flex-end;
+}
+
+.signup-btn, .login-btn {
+    background: #7d5bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.signup-btn:hover, .login-btn:hover {
+    background: #6b4ed9;
+}
+
+.social-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-login p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.social-btn img {
+    margin-right: 10px;
+}
+
+.signup-link, .login-link {
+    text-align: center;
+    color: #666;
+}
+
+/* Image Section */
+.image-section {
+    width: 50%;
+    background: linear-gradient(135deg, #7d5bff, #b47cff);
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-section, .image-section {
+        width: 100%;
+    }
+
+    .image-section {
+        height: 300px;
+    }
+}
